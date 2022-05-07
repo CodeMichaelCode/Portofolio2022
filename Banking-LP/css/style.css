@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e5eafe;;
+}
+
+header {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 40px 0px 40px;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.headerImg {
+    max-width: 200px;
+}
+
+.headerMenu {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.menuItems, .navButtons li{
+    font-size: 1.7rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: relative;
+    color: #0e0e12;
+}
+
+.menuItems::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #537ff6;
+    transition: width ease-out 250ms;
+}
+
+.menuItems:hover::before{
+    width: 100%;
+}
+
+#login {
+    border: 2px solid #537ff6;
+    border-radius: 8px;
+    transition: all ease 300ms;
+}
+
+#login:hover{
+    background-color: #537ff6;
+    color: #ffffff;
+}
+
+#intro, .benefits, #whatShouldYouDo, #appCont {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0px 40px;
+}
+
+.introText, .workingMoney {
+    align-self: center;
+    padding: 40px;
+    max-width: 900px;
+}
+
+.introText h1{
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-bottom: 3rem;
+    background: -webkit-linear-gradient(#5340fc, #62cbf2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.introText p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+    color: #0e0e12;
+}
+
+.introText button, .workingMoney button {
+    padding: 20px 25px;
+    border-radius: 30px;
+    border: none;
+    background-color: #537ff6;
+    font-size: 1.5rem;
+    color: #ffffff;    
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+}
+
+.introText button:hover, .workingMoney button:hover {
+    background-color: #3767eb;
+}
+
+.heroImg, .investorWorking {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heroImg img {
+    width: 90%;
+    max-width: 770px;
+}
+
+.accoladesCont {
+    background: #537ff6;
+    padding: 40px 40px;
+    margin-bottom: 20px;
+}
+
+.accoladesCont h3 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.accoladesWrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap: 30px;
+}
+
+.accolades img {
+    max-width: 200px;
+    width: 100%;
+    /* filter: grayscale(100%); */
+}
+
+.investorWorking img{
+    width: 90%;
+    padding: 0px 0px 40px;
+    max-width: 770px;
+}
+
+.accolades h3 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.accolades span {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+
+#benefits {
+    padding: 80px 0px 0px;
+}
+
+#whatShouldYouDo {
+    padding: 40px 0px 0;
+}
+
+.workingMoney, .downloadApp {
+    align-self: center;
+    padding: 40px;
+    max-width: 770px;
+}
+
+.workingMoney:first-of-type{
+    justify-self: right;
+}
+
+.workingMoney h2, .downloadApp h2 {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-bottom: 3rem;
+    color: #537ff6;
+}
+
+.workingMoney p, .interestRate, .downloadApp p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+}
+
+.interestRate {
+    color: #60b4f4;
+    font-weight: bold;
+}
+
+.investorWorking, .appImage, .heroImg{
+    align-self: center;
+    justify-self: center;
+}
+
+#appCont {
+    padding: 60px 0px 20px;
+}
+
+.appImage {
+    text-align: center;
+}
+
+.appImage img {
+    width: 90%;
+    padding: 0px 0px 40px;
+    max-width: 670px;
+}
+
+.appLinks {
+    display: inline-block;
+}
+
+.appLinks img {
+    height: 55px; 
+    margin-right: 10px;
+}
+
+#footerSection {
+    background-color: #f7f7f7;
+}
+
+footer {
+    text-align: center;
+    list-style: none;
+    padding: 40px 0px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer h4 {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #3767eb;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 2rem;
+}
+
+.socialLink:first-of-type{
+    font-weight: 600;
+}
+
+.fa-brands, .socialLink {
+    font-size: 2rem;
+    padding: 0px;
+    position: relative;
+    color: #0e0e12;
+}
+
+.fa-brands {
+    cursor: pointer;
+}
+
+#footerLinkCont {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    margin-top: 3rem;
+}
+
+footer hr {
+    margin: 3rem auto;
+    background: #60b4f4;
+    border: none;
+    height: 2px;
+}
+
+.footerLinks {
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: ease-in all 300ms;
+}
+
+.footerLinks:hover, .fa-brands:hover {
+    color: #3767eb;
+    /* background-color: #ffffff; */
+}
+
+@media (min-width: 1024px) {
+    #intro, .benefits, #whatShouldYouDo, #appCont {
+        grid-template-columns: repeat(2,1fr);
+    }
+    #hamburger {
+        display: none;
+    }
+    #footerLinkCont {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1023px) {
+    .heroImg, .investorWorking {
+        margin: 0 ;
+        text-align: left;
+    }
+
+    #intro, .benefits, #whatShouldYouDo, #appCont {
+        justify-content: flex-start;
+    }
+
+    .investorWorking, .appImage, .heroImg{
+        align-self: center;
+        justify-self: center;
+        padding: 0px;
+    }
+
+    .investorWorking, .heroImg {
+        grid-row: 2;
+    }
+
+    .accoladesWrapper {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .appLinks {
+        margin-bottom: 10px;
+    }
+
+    .workingMoney h2, .downloadApp h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 40px 0px 0px 40px;
+    }
+
+    .navMenu, .navButtons {
+        display: none;
+        width: 100%;
+    }
+
+    .navMenu.active, .navButtons.active {
+        display: block;
+        width: 100%;
+    }
+
+    .headerMenu {
+        flex-direction: column;
+    }
+
+    .menuItems, .navButtons li {
+        padding: 10px 20px;
+    }
+
+    #hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 0px 10px 10px;
+    }
+
+    .bar {
+        width: 46px;
+        height: 5px;
+        background-color: #60b4f4;
+        display: block;
+        border-radius: 8px;
+        margin: 8px auto;
+        -webkit-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+    }
+
+    #hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #hamburger.active .bar:nth-child(1) {
+        transform: translateY(12px) rotate(45deg);
+    }
+    #hamburger.active .bar:nth-child(3) {
+        transform: translateY(-14px) rotate(-45deg);
+    }
+    #footerLinkCont {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .appLinks img {
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #intro, .benefits, #whatShouldYouDo, #appCont {
+        display: grid;
+        width: 100%;
+    }
+
+    header {
+        padding: 40px 0px 0px 0px;
+    }
+
+    .headerImg {
+        width: 190px;
+        padding-left: 20px;
+    }
+
+    .heroImg, .investorWorking {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .benefits {
+        padding: 20px 0px 0px;
+    }
+
+    .accoladesCont {
+        padding: 60px 40px;
+    }
+
+    .appImage img {
+        padding: 0px 0px 0px;
+    }
+
+    .investorWorking img {
+        padding: 0px 0px 20px;
+    }
+
+    #footerLinkCont {
+        grid-template-columns: 1fr;
+        justify-items: start;
+    }
+
+    .socialLinks {
+        justify-content: flex-start;
+    }
+
+    footer h4 {
+        text-align: left;
+    }
+
+    .appLinks img {
+        height: 40px;
+        margin-right: 10px;
+    }
+}

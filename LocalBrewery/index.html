@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/a2cca70df3.js" crossorigin="anonymous"></script>
+    <title>Breweries For You</title>
+</head>
+<body>
+    <nav class="stroke">
+        <img src="./imgs/Tom's Tavern Trove-logo/default.png" alt="">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+            <ul class="navMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#searchArea">Search</a></li>
+                <li><a href="#howItWorks">How It Works</a></li>
+                <li><a href="#howItWorksLink">Brewery Legend</a></li>
+            </ul>
+
+    </nav>
+    <header>
+        <div class="center">
+            <div id="intro">
+                <h1>Welcome to TTT!</h1>
+                <p>Are you looking for the nearest local brewery to have a brew with a few of your closest buds? Look no further we'll handle that search for you.</p>
+                <button onclick="location.href='#searchArea'">Look for  brewey</button>
+            </div>
+            <div id="bannerImg"><img src="./imgs/fred-moon-0yqa0rMCsYk-unsplash.jpg" alt="People toasting"></div>
+        </div>
+    </header>
+    <main>
+        <section class="filterCont" id="searchArea">
+
+            <div>
+                <h2>Find Nearby Local Breweries </h2>
+                <fieldset class="switchField">
+                    <input type="radio" id="city" name="breweryFilter" value="by_city=" checked>
+                    <label for="city">City</label><br>
+                    <input type="radio" id="name" name="breweryFilter" value="by_name=">
+                    <label for="name">Name</label><br>
+                    <input type="radio" id="state" name="breweryFilter" value="by_state=">
+                    <label for="state">State</label>
+                    <input type="radio" id="postal" name="breweryFilter" value="by_postal=">
+                    <label for="postal">Postal</label>
+                </fieldset>
+                <div class="searchBar">
+                    <input type="text" placeholder="Text here" maxlength="75" id="searchedText">
+                    <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <div class="searchResults hide">
+            </div>
+            
+            <div id="pageButtons" class="hide">
+               <i class="fa-solid fa-caret-left" id="prev" onclick="location.href='#searchArea'"></i></i>
+               <span id="pageNumber">1</span>
+                <i class="fa-solid fa-caret-right" id="next" onclick="location.href='#searchArea'"></i>
+            </div>
+      
+    </section>
+        <section id="howItWorks">
+            <div class="center">
+                <div id="howItWorksSection">
+                    <h2>How It Works</h2>
+                    <ol id="instructions">
+                        <li>&nbsp;Select which search type you want to use.</li>
+                        <li>Enter text related to search type.</li>
+                        <li>Click the <i class="fa-solid fa-magnifying-glass"></i> button.</li>
+                        <li>Cheers! Now check out the results.</li>
+                        <li>Click <a href="#searchArea" >here</a> to get started!</li>
+                        <img src="./imgs/long-livethe-blob-cheers.gif" alt="beer cheers">
+                    </ol>
+                </div>
+                <div id="howItWorksLink">
+                    <h3>Brewery Types Legend</h3>
+                    <ul>
+                        <li><span>Micro</span> - Most craft breweries. For example, Samual Adams is still considered a micro brewery.</li>
+                        <li><span>Nano</span> - An extremely small brewery which typically only distributes locally.</li>
+                        <li><span>Regional</span> - A regional location of an expanded brewery. Ex. Sierra Nevada's Asheville, NC location.</li>
+                        <li><span>Brewpub</span> - A beer-focused restaurant or restaurant/bar with a brewery on-premise.</li>
+                        <li><span>Planning</span> - A brewery in planning or not yet opened to the public.</li>
+                        <li><span>Contract</span> - A brewery that uses another brewery's equipment.</li>
+                        <li><span>Proprietor</span> - Similar to contract brewing but refers more to a brewery incubator.</li>
+                        <li><span>Closed</span> - A location which has been closed recently.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="beerGlasses">
+            <img src="./imgs/jon-parry-C8eSYwQkwHw-unsplash (1).jpg" alt="">
+        </section>
+    </main>
+    <footer class="stroke">
+        <ul>
+            <li><a href="#searchArea">Search</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

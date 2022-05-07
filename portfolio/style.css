@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&family=Martel:wght@400;600;700&display=swap');
+/* 
+FONTS
+font-family: 'Kanit', sans-serif;
+font-family: 'Martel', serif; 
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Martel', serif; 
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    background-color:#2d3436;
+    width: 100%;
+    top: 0;
+    transition: ease 500ms all;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+nav a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 10px;
+    display: block;
+    color: #fff;
+    transition: all 400ms ease
+}
+
+nav li {
+    position: relative;
+}
+
+/* nav a:hover {
+    background-color: #BFC0C0;
+    color: #2abafb;
+} */
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 6;
+    padding: 10px;
+}
+
+.bar {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin: 8px auto;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    background-color: white;
+    z-index: 5;
+}
+
+main {
+    padding: 40px 0px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+section {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#intro {
+    display: grid;
+    /* gap: 40px; */
+    /* align-items: flex-end; */
+}
+
+.introInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    color: #2d3436;
+}
+
+.introInfo h1 {
+    font-size: 4rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+#myName {
+    text-decoration: underline dotted;
+    text-decoration-color: #2bbbfb;
+    font-size: 4rem;
+}
+
+.introInfo p {
+    font-size: 1.5rem;
+    font-family: 'Martel', serif; 
+}
+
+.headShotContainer {
+    text-align: center;
+}
+
+.headShotContainer img {
+    margin: -45px;
+    max-width: 400px;
+    width: 100%;
+}
+
+#fullWidthGrayBG {
+    background-color: rgb(235, 235, 235);
+    padding: 40px 0;
+}
+
+#projects {
+    display: grid;
+    gap: 20px;
+}
+
+#projects h2 {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+#projects article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #2c3436;
+    gap: 20px;
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+article img {
+    width: 100%;
+    /* max-width: 300px; */
+    border-radius: 5px;
+}
+
+article h4 {
+    font-size: 3rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    line-height: 4rem;
+}
+
+article p {
+    font-size: 1.5rem;
+    font-family: 'Martel', serif; 
+}
+
+.projectLinks a {
+    font-size: 2.1rem;
+    border: 0;
+    color: #2bbbfb;
+    cursor: pointer;
+    padding: 10px 5px;
+    text-decoration: none;
+    margin: auto 10px;
+}
+
+#contactContainer {
+    display: grid;
+    gap: 40px;
+}
+
+#letsConnect h3{
+    font-size: 6rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    line-height: 7rem;
+    margin-bottom: 20px;
+}
+
+#letsConnect .fa-solid {
+    color: #2bbbfb;
+    font-size: 5rem;
+}
+
+#letsConnect p {
+    font-size: 1.5rem;
+    font-family: 'Martel', serif; 
+    width: 80%;
+}
+
+#formContainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form label, textarea {
+    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+form input, textarea {
+    border: 0;
+    border-bottom: #2d3436 solid 2px;
+    padding: 6px;
+    margin-bottom: 15px;
+    background-color: #f6f6f6;
+}
+
+form input:focus, textarea:focus {
+    outline: none;
+    background-color: #ebebeb;
+}
+
+form button {
+    font-size: 2.1rem;
+    border: 0;
+    background-color: transparent;
+    text-align: left;
+    color: #2bbbfb;
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px 5px;
+}
+
+form button:hover {
+    font-style: italic;
+    color: #13a8e7;
+}
+
+footer {
+    background-color: #2d3436;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 15px 40px;
+    flex-direction: column;
+}
+
+footer p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+}
+
+#socialLinks {
+    display: flex;
+    gap: 15px;
+}
+
+footer a {
+    color: #6c6c6c;
+    text-decoration: none;
+    transition: all 300ms ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer .fa-brands {
+    font-size: 2.6rem;
+    vertical-align: middle;
+}
+
+
+
+@media (min-width: 1028px) {
+    #projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #projects h2 {
+        grid-column: span 2;
+    }
+    #contactContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #myName {
+        white-space: nowrap;
+        font-size: 5rem;
+    }
+    #intro {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    article img {
+        height: 300px;
+    }
+}
+
+@media (min-width: 801px) {
+    nav li:hover:before {
+        content: "";
+        position: absolute;
+        bottom: 8px;
+        background: #2abafb;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        left: calc(50%);
+        transform: translateX(-50%);
+    }
+    #myName {
+        white-space: nowrap;
+    }
+    #intro {
+        gap: 40px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    header {
+    padding: 0px;
+    background-color: transparent;
+    position: fixed;
+    }
+    .hamburger {
+        display: block;
+        background-color: #2abafb8c;;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        margin-top: 10px;
+        padding: 4px 20px;
+        z-index: 9999;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(13px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-13px) rotate(-45deg);
+    }
+
+    .menu {
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: #2c3436;;
+        list-style: none;
+        padding-top: 4rem;
+        height: fit-content;
+        display: block;
+    }
+    
+    .menu.active {
+        transform: translateY(0);
+        display: block;
+    }
+
+    header {
+        justify-content: flex-end;
+    }
+
+    nav a {
+        padding: 20px;
+    }
+
+    li:hover {
+        background-color: #2196f3;
+    }
+    #fullWidthGrayBG {
+        margin-top: -40px;
+    }
+
+    .headShotContainer img {
+        margin: -5px;
+    }
+}
