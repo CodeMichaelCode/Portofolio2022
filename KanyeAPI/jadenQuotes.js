@@ -1,3 +1,0 @@
-const celeberityQuotes = {
-  "Jaden" : ["Most trees are blue", "How can mirrors be real if our eyes aren't real", "If newborn babies could speak they would be the most intelligent beings on earth.", "If everybody in the world dropped out of school then we would have a much more intelligent society.", "Trees are never sad", "The human consciousness should raise before I speak my juvenile philosophy"]
-}
