@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: TruenoRg
+font link: https://fontlibrary.org/en/font/trueno
+font author: Julieta Ulanovsky
+font author site: http://www.zkysky.com.ar/
+
+
+icon designer: Patrick Morrison
+icon designer link: /bluevurt
+        
+{"bg":"#E5EAFE","icon-gradient-0":"#5106FF","icon-gradient-1":"#61CBF2","font":"#22255B","slogan":"#36396f"}
+      
