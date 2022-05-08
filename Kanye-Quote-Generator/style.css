@@ -6,11 +6,14 @@
     padding: 0;
 }
 
-main {
+body {
     min-height: 100vh;
     background-image: url('./imgs/yeezus.jpeg');
     background-size: cover;
     background-position: top center;
+}
+
+main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
