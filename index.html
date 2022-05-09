@@ -79,7 +79,12 @@
                 <p>Michael Olawunmi is a professional developer whos open for new projects and freelancing. Feel free to reach out.</p>
             </div>
             <div id="formContainer">
-                <form action="POST" name="contact" data-netlify="true" method="POST">
+                <form action="POST" name="contact" data-netlify="true" method="POST" netlify-honeypot="bot-field">
+                    <p class="hidden">
+                        <label>
+                          Don’t fill this out if you’re human: <input name="bot-field" />
+                        </label>
+                      </p>
                     <label for="name">Your name:</label>
                     <input type="text" id="name" name="fullname">
                     <label for="email">Your email address:</label>

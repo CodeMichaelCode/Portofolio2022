@@ -38,5 +38,5 @@ copyBtn.addEventListener('click', () => {
   
     body.removeChild(area);
 
-    alert('Text copied')
+    // alert('Text copied')
 });
