@@ -189,7 +189,6 @@ article p {
 #contactContainer {
     display: grid;
     /* removed gap. hidden field is creating space */
-    /* gap: 40px; */
 }
 
 #letsConnect h3{
@@ -299,7 +298,13 @@ footer .fa-brands {
     }
     #contactContainer {
         grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
     }
+
+    #formContainer {
+        margin-top: -40px;
+    }
+
     #myName {
         white-space: nowrap;
         font-size: 5rem;
