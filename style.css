@@ -312,10 +312,6 @@ footer .fa-brands {
     #intro {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    article img {
-        height: 300px;
-    }
 }
 
 @media (min-width: 801px) {
